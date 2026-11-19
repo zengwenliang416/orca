@@ -1,6 +1,8 @@
 # Fleet view performance (stablyai/orca issue #44075)
 
-Branch `feat/orchestration-fleet-view`. Baseline `04d4fb053e` (Fleet without the node memo). Fix `cd69d57fca` (re-render only changed nodes).
+Branch `feat/orchestration-fleet-view`. Baseline `3a063c0259` (Fleet without the node memo). Fix `36e0a83861` (re-render only changed nodes).
+
+The runs were made before the branch's commit author email was rewritten, so the raw logs name the same two builds as `04d4fb053e` and `cd69d57fca`. Each rewritten commit has the same tree as its original.
 
 ## Verdict
 
