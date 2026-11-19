@@ -1,0 +1,7282 @@
+{
+  "meta": {
+    "at": "2026-11-19T04:50:15.517Z",
+    "uptime": "04:50:15 up 5 days, 19:29,  0 users,  load average: 1.13, 0.94, 1.10",
+    "loadavg": [
+      1.13,
+      0.94,
+      1.1
+    ],
+    "cores": 8,
+    "cpu": "AMD EPYC 7K62 48-Core Processor",
+    "memGiB": 16,
+    "platform": "linux 5.15.0-203-generic x64",
+    "node": "v24.18.0",
+    "repoHead": "04d4fb053ef23e208a6b85abc019f059d0e4f016",
+    "repoBranch": "HEAD",
+    "url": "http://127.0.0.1:4791",
+    "browser": "156.0.8078.4",
+    "options": {
+      "repo": "/root/orca-fleet-perf",
+      "out": "/root/orca-fleet-perf-harness/aba-20261119-044854/a1-base",
+      "url": "http://127.0.0.1:4791",
+      "sizes": [
+        100,
+        300
+      ],
+      "runs": 7,
+      "ticks": 40,
+      "theme": "dark"
+    }
+  },
+  "summary": {
+    "mount": {
+      "Fleet100": {
+        "runs": 7,
+        "toReadyMs": {
+          "n": 7,
+          "median": 138.6,
+          "min": 133.3,
+          "max": 163.1,
+          "p95": 163.1
+        },
+        "toLastCommitMs": null,
+        "reactRenderMs": {
+          "n": 7,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "elements": {
+          "n": 7,
+          "median": 1502,
+          "min": 1502,
+          "max": 1502,
+          "p95": 1502
+        },
+        "cardButtons": {
+          "n": 7,
+          "median": 42,
+          "min": 42,
+          "max": 42,
+          "p95": 42
+        },
+        "expectedFleetNodes": 42,
+        "problems": [],
+        "errors": 0
+      },
+      "Board100": {
+        "runs": 7,
+        "toReadyMs": {
+          "n": 7,
+          "median": 86.1,
+          "min": 72.6,
+          "max": 127.2,
+          "p95": 127.2
+        },
+        "toLastCommitMs": null,
+        "reactRenderMs": {
+          "n": 7,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "elements": {
+          "n": 7,
+          "median": 923,
+          "min": 923,
+          "max": 923,
+          "p95": 923
+        },
+        "cardButtons": {
+          "n": 7,
+          "median": 40,
+          "min": 40,
+          "max": 40,
+          "p95": 40
+        },
+        "expectedFleetNodes": 42,
+        "problems": [],
+        "errors": 0
+      },
+      "Fleet300": {
+        "runs": 7,
+        "toReadyMs": {
+          "n": 7,
+          "median": 461.1,
+          "min": 425.4,
+          "max": 516.2,
+          "p95": 516.2
+        },
+        "toLastCommitMs": null,
+        "reactRenderMs": {
+          "n": 7,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "elements": {
+          "n": 7,
+          "median": 5951,
+          "min": 5951,
+          "max": 5951,
+          "p95": 5951
+        },
+        "cardButtons": {
+          "n": 7,
+          "median": 210,
+          "min": 210,
+          "max": 210,
+          "p95": 210
+        },
+        "expectedFleetNodes": 210,
+        "problems": [],
+        "errors": 0
+      },
+      "Board300": {
+        "runs": 7,
+        "toReadyMs": {
+          "n": 7,
+          "median": 106.7,
+          "min": 98.9,
+          "max": 134.8,
+          "p95": 134.8
+        },
+        "toLastCommitMs": null,
+        "reactRenderMs": {
+          "n": 7,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "elements": {
+          "n": 7,
+          "median": 1223,
+          "min": 1223,
+          "max": 1223,
+          "p95": 1223
+        },
+        "cardButtons": {
+          "n": 7,
+          "median": 50,
+          "min": 50,
+          "max": 50,
+          "p95": 50
+        },
+        "expectedFleetNodes": 210,
+        "problems": [],
+        "errors": 0
+      }
+    },
+    "updates": {
+      "Fleet300": {
+        "runs": 7,
+        "ticksPerRun": 40,
+        "runMedianFlushMs": {
+          "n": 7,
+          "median": 19.5,
+          "min": 17.9,
+          "max": 21.6,
+          "p95": 21.6
+        },
+        "runMedianReactMs": {
+          "n": 7,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "runMedianLayoutMs": {
+          "n": 7,
+          "median": 2.5,
+          "min": 2.3,
+          "max": 2.7,
+          "p95": 2.7
+        },
+        "pooledFlushMs": {
+          "n": 280,
+          "median": 19.7,
+          "min": 14,
+          "max": 70.3,
+          "p95": 47
+        },
+        "pooledReactMs": {
+          "n": 280,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "pooledLayoutMs": {
+          "n": 280,
+          "median": 2.5,
+          "min": 0,
+          "max": 26.3,
+          "p95": 13.7
+        },
+        "profilerCommits": 0,
+        "elements": {
+          "n": 7,
+          "median": 7619,
+          "min": 7611,
+          "max": 7619,
+          "p95": 7619
+        },
+        "problems": [],
+        "errors": 0
+      },
+      "Board300": {
+        "runs": 7,
+        "ticksPerRun": 40,
+        "runMedianFlushMs": {
+          "n": 7,
+          "median": 7.4,
+          "min": 7.2,
+          "max": 7.7,
+          "p95": 7.7
+        },
+        "runMedianReactMs": {
+          "n": 7,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "runMedianLayoutMs": {
+          "n": 7,
+          "median": 0.3,
+          "min": 0.2,
+          "max": 0.3,
+          "p95": 0.3
+        },
+        "pooledFlushMs": {
+          "n": 280,
+          "median": 7.3,
+          "min": 3,
+          "max": 13.9,
+          "p95": 11.4
+        },
+        "pooledReactMs": {
+          "n": 280,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "pooledLayoutMs": {
+          "n": 280,
+          "median": 0.2,
+          "min": 0,
+          "max": 1.1,
+          "p95": 0.8
+        },
+        "profilerCommits": 0,
+        "elements": {
+          "n": 7,
+          "median": 1259,
+          "min": 1259,
+          "max": 1259,
+          "p95": 1259
+        },
+        "problems": [],
+        "errors": 0
+      }
+    }
+  },
+  "errors": [],
+  "ignoredErrors": [],
+  "mounts": [
+    {
+      "run": 0,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 135.60000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 0,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 87,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 0,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 500,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 0,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 134.80000001192093,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 1,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 76.89999997615814,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 1,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 142.10000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 1,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 104.09999996423721,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 1,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 451.89999997615814,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 2,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 158.10000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 2,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 127.19999998807907,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 2,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 469.60000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 2,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 106.69999998807907,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 3,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 76.30000001192093,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 3,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 138.60000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 3,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 102.90000003576279,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 3,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 454.60000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 4,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 138.5,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 4,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 72.60000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 4,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 461.10000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 4,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 117.19999998807907,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 5,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 86.09999996423721,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 5,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 133.30000001192093,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 5,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 98.89999997615814,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 5,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 516.1999999880791,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 6,
+      "size": 100,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 163.10000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "fleet",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 1502,
+        "cardButtons": 42,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 13,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 6,
+      "size": 100,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale100Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 89,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 100,
+      "view": "board",
+      "expectedFleetNodes": 42,
+      "dom": {
+        "elements": 923,
+        "cardButtons": 40,
+        "boardRows": 40,
+        "boardLaneTotal": 100,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 100
+      },
+      "expectedNodes": 42,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 6,
+      "size": 300,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Fleet",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 425.4000000357628,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "fleet",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 5951,
+        "cardButtons": 210,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    },
+    {
+      "run": 6,
+      "size": 300,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300Board",
+      "state": "ready",
+      "error": null,
+      "toReadyMs": 114.60000002384186,
+      "toLastCommitMs": null,
+      "profilerMs": 0,
+      "profilerCommits": 0,
+      "cardCount": 300,
+      "view": "board",
+      "expectedFleetNodes": 210,
+      "dom": {
+        "elements": 1223,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 210,
+      "problems": [],
+      "errors": 0
+    }
+  ],
+  "updates": [
+    {
+      "run": 0,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 47,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 19.5,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 23.099999964237213,
+          "layoutMs": 8.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 19.100000023841858,
+          "layoutMs": 10,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 2.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 17.5,
+          "layoutMs": 11.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 22,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 22.200000047683716,
+          "layoutMs": 2.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 56.60000002384186,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 21.399999976158142,
+          "layoutMs": 1.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 19.69999998807907,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 21,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 21.69999998807907,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 27,
+          "layoutMs": 2.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 18.69999998807907,
+          "layoutMs": 7.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 41.89999997615814,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 18.700000047683716,
+          "layoutMs": 17.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 18.600000023841858,
+          "layoutMs": 6.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 19.5,
+          "layoutMs": 2.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 23.5,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 17.299999952316284,
+          "layoutMs": 3.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 23.19999998807907,
+          "layoutMs": 5.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 20.19999998807907,
+          "layoutMs": 2.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 20.900000035762787,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 21.799999952316284,
+          "layoutMs": 2.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 26.30000001192093,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 36.80000001192093,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 16.600000023841858,
+          "layoutMs": 1.7999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 18.100000023841858,
+          "layoutMs": 3.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 17.600000023841858,
+          "layoutMs": 1.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 48.10000002384186,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 52.60000002384186,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 23.599999964237213,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 21.69999998807907,
+          "layoutMs": 3.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 23.80000001192093,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 21.69999998807907,
+          "layoutMs": 11.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 16.799999952316284,
+          "layoutMs": 1.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 18.399999976158142,
+          "layoutMs": 1.9000000357627869,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 44,
+          "flippedIndex": 128,
+          "flippedToAttention": true,
+          "flushMs": 16.200000047683716,
+          "layoutMs": 1.7999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7619,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 128,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 21.4,
+          "min": 16.2,
+          "max": 56.6,
+          "p95": 48.1
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.5,
+          "min": 0,
+          "max": 17.3,
+          "p95": 11.1
+        }
+      }
+    },
+    {
+      "run": 0,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 6.300000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 6.699999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 7.399999976158142,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 9.700000047683716,
+          "layoutMs": 0.2999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 11.899999976158142,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 7.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 6.899999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 9.099999964237213,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 7.199999988079071,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 8.699999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 6.900000035762787,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 7.900000035762787,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 3.5,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 9.699999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 6.199999988079071,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 9,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 9.800000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 4.600000023841858,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 4.200000047683716,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 3.899999976158142,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 7.699999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 8.900000035762787,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 7.199999988079071,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 5.099999964237213,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 5.199999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 5.399999976158142,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 9.300000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 10.399999976158142,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 9.199999988079071,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 6.5,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 4.599999964237213,
+          "layoutMs": 0.7000000476837158,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 6.300000011920929,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 4.399999976158142,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 7.300000011920929,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 8.900000035762787,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 7.300000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.2,
+          "min": 3.5,
+          "max": 11.9,
+          "p95": 9.8
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.2,
+          "min": 0,
+          "max": 0.8,
+          "p95": 0.7
+        }
+      }
+    },
+    {
+      "run": 1,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 7.799999952316284,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 10,
+          "layoutMs": 0.40000003576278687,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 10,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 10.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 8.5,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 7.5,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 7.900000035762787,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 6.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 8.5,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 7.900000035762787,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 6.5,
+          "layoutMs": 0.2999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 9.099999964237213,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 4.399999976158142,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 8.399999976158142,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 7.5,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 7.600000023841858,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 7.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 3.399999976158142,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 3.199999988079071,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 7.5,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 7.400000035762787,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 7.100000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 5.399999976158142,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 3.5,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 3.399999976158142,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 12.800000011920929,
+          "layoutMs": 0.2999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 7.100000023841858,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 6.5,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 6.599999964237213,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 6.300000011920929,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 8.899999976158142,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 7,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 8.200000047683716,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 9.800000011920929,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 10.900000035762787,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.4,
+          "min": 3.2,
+          "max": 12.8,
+          "p95": 10.2
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.3,
+          "min": 0,
+          "max": 0.8,
+          "p95": 0.8
+        }
+      }
+    },
+    {
+      "run": 1,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 54.5,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 17.69999998807907,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 21.30000001192093,
+          "layoutMs": 6.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 22.600000023841858,
+          "layoutMs": 13.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 24.69999998807907,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 22.900000035762787,
+          "layoutMs": 13.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 19.80000001192093,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 21.19999998807907,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 63.30000001192093,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 21.099999964237213,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 23.099999964237213,
+          "layoutMs": 3.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 21.900000035762787,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 18,
+          "layoutMs": 1.9000000357627869,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 25.899999976158142,
+          "layoutMs": 2.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 24.899999976158142,
+          "layoutMs": 8.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 41.5,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 19.30000001192093,
+          "layoutMs": 19.799999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 16.900000035762787,
+          "layoutMs": 6.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 33.89999997615814,
+          "layoutMs": 3.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 27.69999998807907,
+          "layoutMs": 1.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 33.69999998807907,
+          "layoutMs": 4.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 28.099999964237213,
+          "layoutMs": 8.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 18.100000023841858,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 18,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 16,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 19.80000001192093,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 40.90000003576279,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 17,
+          "layoutMs": 3.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 17.299999952316284,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 41.39999997615814,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 42.69999998807907,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 21.100000023841858,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 17.69999998807907,
+          "layoutMs": 3.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 17.100000023841858,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 17.600000023841858,
+          "layoutMs": 1.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 19.19999998807907,
+          "layoutMs": 15.700000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 23.400000035762787,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 20.100000023841858,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 44,
+          "flippedIndex": 128,
+          "flippedToAttention": true,
+          "flushMs": 17.599999964237213,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7619,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 128,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 21.2,
+          "min": 16,
+          "max": 63.3,
+          "p95": 42.7
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.7,
+          "min": 0,
+          "max": 19.8,
+          "p95": 13.7
+        }
+      }
+    },
+    {
+      "run": 2,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 35,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 17.5,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 16.899999976158142,
+          "layoutMs": 6.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 22.80000001192093,
+          "layoutMs": 14.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 17,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 19,
+          "layoutMs": 13,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 14,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 16.19999998807907,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 47,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 16.69999998807907,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 16.69999998807907,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 23.30000001192093,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 24.400000035762787,
+          "layoutMs": 2.799999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 17.80000001192093,
+          "layoutMs": 6.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 36.200000047683716,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 21.899999976158142,
+          "layoutMs": 20.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 29.600000023841858,
+          "layoutMs": 11.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 25.599999964237213,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 16.69999998807907,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 17.80000001192093,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 18.100000023841858,
+          "layoutMs": 6.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 18.80000001192093,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 23.099999964237213,
+          "layoutMs": 2.900000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 16,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 17,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 35.799999952316284,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 18.30000001192093,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 15.5,
+          "layoutMs": 2.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 19.5,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 36,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 39.89999997615814,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 22.80000001192093,
+          "layoutMs": 2.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 22,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 23.30000001192093,
+          "layoutMs": 3.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 20.099999964237213,
+          "layoutMs": 12.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 30,
+          "layoutMs": 3.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 17.80000001192093,
+          "layoutMs": 2.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 44,
+          "flippedIndex": 128,
+          "flippedToAttention": true,
+          "flushMs": 17.30000001192093,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7619,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 128,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 19,
+          "min": 14,
+          "max": 47,
+          "p95": 36.2
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.6,
+          "min": 0.1,
+          "max": 20.4,
+          "p95": 13
+        }
+      }
+    },
+    {
+      "run": 2,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 7.699999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 9.699999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 10.199999988079071,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 11.5,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 10.899999976158142,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 10,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 6.399999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 6.5,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 6.899999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 9.300000011920929,
+          "layoutMs": 0.2999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 6.300000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 8.599999964237213,
+          "layoutMs": 0.40000003576278687,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 7,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 3.300000011920929,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 7.299999952316284,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 8.199999988079071,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 9.400000035762787,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 3.700000047683716,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 4.699999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 4.300000011920929,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 3.5,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 8.600000023841858,
+          "layoutMs": 0.2999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 9.600000023841858,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 8.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 4.799999952316284,
+          "layoutMs": 0.7000000476837158,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 5,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 5.600000023841858,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 4.5,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 4.800000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 8.699999988079071,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 10.299999952316284,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 7.700000047683716,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 7.800000011920929,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 4.299999952316284,
+          "layoutMs": 0.7000000476837158,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 9.799999952316284,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 5.199999988079071,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 6.699999988079071,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 9.399999976158142,
+          "layoutMs": 0.40000003576278687,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 7.100000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.7,
+          "min": 3.3,
+          "max": 11.5,
+          "p95": 10.3
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.3,
+          "min": 0,
+          "max": 0.8,
+          "p95": 0.8
+        }
+      }
+    },
+    {
+      "run": 3,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 8.5,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 9.399999976158142,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 10.5,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 13,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 9.299999952316284,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 9.600000023841858,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 9.599999964237213,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 6.399999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 10.5,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 9.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 7.599999964237213,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 7.100000023841858,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 3.599999964237213,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 9.199999988079071,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 6.900000035762787,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 5.600000023841858,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 8.399999976158142,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 4.800000011920929,
+          "layoutMs": 0.8999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 5,
+          "layoutMs": 1,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 4.199999988079071,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 7,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 3.199999988079071,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 4.199999988079071,
+          "layoutMs": 0.7000000476837158,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 3.700000047683716,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 3.900000035762787,
+          "layoutMs": 0.8999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 5,
+          "layoutMs": 0.8999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 11.699999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 8.899999976158142,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 6.700000047683716,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 10.799999952316284,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 6.5,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 4.699999988079071,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 13,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 12.100000023841858,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 12.799999952316284,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.6,
+          "min": 3.2,
+          "max": 13,
+          "p95": 12.8
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.3,
+          "min": 0,
+          "max": 1,
+          "p95": 0.9
+        }
+      }
+    },
+    {
+      "run": 3,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 42.90000003576279,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 30.899999976158142,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 25.5,
+          "layoutMs": 8.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 16.5,
+          "layoutMs": 10.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 27.100000023841858,
+          "layoutMs": 3.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 19.30000001192093,
+          "layoutMs": 10.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 19.700000047683716,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 17.399999976158142,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 49.19999998807907,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 14.5,
+          "layoutMs": 1.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 21.599999964237213,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 21.69999998807907,
+          "layoutMs": 2.700000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 17.599999964237213,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 23.400000035762787,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 17.099999964237213,
+          "layoutMs": 7.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 49.5,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 19.600000023841858,
+          "layoutMs": 19.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 17.69999998807907,
+          "layoutMs": 7.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 17.099999964237213,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 18.5,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 19.099999964237213,
+          "layoutMs": 3.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 18.200000047683716,
+          "layoutMs": 6.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 23.80000001192093,
+          "layoutMs": 3.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 22,
+          "layoutMs": 2.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 16.899999976158142,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 20.80000001192093,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 50.40000003576279,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 24.69999998807907,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 26.100000023841858,
+          "layoutMs": 4.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 23.899999976158142,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 53.39999997615814,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 40.5,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 24.600000023841858,
+          "layoutMs": 2.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 20.600000023841858,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 16.80000001192093,
+          "layoutMs": 1.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 20.900000035762787,
+          "layoutMs": 2.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 22.299999952316284,
+          "layoutMs": 12.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 24.69999998807907,
+          "layoutMs": 2.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 18.69999998807907,
+          "layoutMs": 2.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 44,
+          "flippedIndex": 128,
+          "flippedToAttention": true,
+          "flushMs": 17.900000035762787,
+          "layoutMs": 2.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7619,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 128,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 21.6,
+          "min": 14.5,
+          "max": 53.4,
+          "p95": 49.5
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.6,
+          "min": 0.1,
+          "max": 19.5,
+          "p95": 10.8
+        }
+      }
+    },
+    {
+      "run": 4,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 32.89999997615814,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 18.30000001192093,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 20.399999976158142,
+          "layoutMs": 26.30000001192093,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 22.80000001192093,
+          "layoutMs": 14.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 22.899999976158142,
+          "layoutMs": 3,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 20.700000047683716,
+          "layoutMs": 14.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 16.80000001192093,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 19.5,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 42.60000002384186,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 25.899999976158142,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 16.30000001192093,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 23.400000035762787,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 26.19999998807907,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 18.5,
+          "layoutMs": 2.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 22.5,
+          "layoutMs": 9.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 50.19999998807907,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 18,
+          "layoutMs": 19.69999998807907,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 19.30000001192093,
+          "layoutMs": 17.80000001192093,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 22.200000047683716,
+          "layoutMs": 2.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 15.199999988079071,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 16.100000023841858,
+          "layoutMs": 3.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 16.099999964237213,
+          "layoutMs": 5.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 19.80000001192093,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 23.100000023841858,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 16.400000035762787,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 17.600000023841858,
+          "layoutMs": 1.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 38.39999997615814,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 15.5,
+          "layoutMs": 1.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 18.900000035762787,
+          "layoutMs": 3.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 15.800000011920929,
+          "layoutMs": 1.7999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 40.5,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 42,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 18.200000047683716,
+          "layoutMs": 2.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 16.80000001192093,
+          "layoutMs": 2.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 15.399999976158142,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 20.69999998807907,
+          "layoutMs": 1.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 16.399999976158142,
+          "layoutMs": 10.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 24.599999964237213,
+          "layoutMs": 2.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 15.699999988079071,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 44,
+          "flippedIndex": 128,
+          "flippedToAttention": true,
+          "flushMs": 18.80000001192093,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7619,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 128,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 19.5,
+          "min": 15.2,
+          "max": 50.2,
+          "p95": 42
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.4,
+          "min": 0,
+          "max": 26.3,
+          "p95": 17.8
+        }
+      }
+    },
+    {
+      "run": 4,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 6.5,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 7.300000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 8.600000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 8.399999976158142,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 7,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 9.300000011920929,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 8.100000023841858,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 7.600000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 9.599999964237213,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 8.300000011920929,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 3.600000023841858,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 7.099999964237213,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 7.800000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 7.800000011920929,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 7.5,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 4.199999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 4,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 3.600000023841858,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 7.399999976158142,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 10.300000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 4.400000035762787,
+          "layoutMs": 0.8999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 3.600000023841858,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 4.400000035762787,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 4.899999976158142,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 12,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 8.399999976158142,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 6.600000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 7.5,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 3.300000011920929,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 9.299999952316284,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 3,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 7.600000023841858,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 7.600000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 6.700000047683716,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.4,
+          "min": 3,
+          "max": 12,
+          "p95": 9.6
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.2,
+          "min": 0,
+          "max": 0.9,
+          "p95": 0.8
+        }
+      }
+    },
+    {
+      "run": 5,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 7.5,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 9.099999964237213,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 9,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 8.5,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 11.399999976158142,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 6.899999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 6.699999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 7.900000035762787,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 6.900000035762787,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 7.600000023841858,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 6.600000023841858,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 8.5,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 7.599999964237213,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 6,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 6,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 8.199999988079071,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 3.099999964237213,
+          "layoutMs": 0.7000000476837158,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 3.099999964237213,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 3.800000011920929,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 7.399999976158142,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 8.300000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 6,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 3.699999988079071,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 4.100000023841858,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 3.100000023841858,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 4.300000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 4.200000047683716,
+          "layoutMs": 0.7999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 13.900000035762787,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 10.399999976158142,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 11.800000011920929,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 12.699999988079071,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 3.899999976158142,
+          "layoutMs": 1.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 10,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 5.199999988079071,
+          "layoutMs": 0.9000000357627869,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 11.299999952316284,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 11.5,
+          "layoutMs": 0.3999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 9.199999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.4,
+          "min": 3.1,
+          "max": 13.9,
+          "p95": 11.8
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.2,
+          "min": 0,
+          "max": 1.1,
+          "p95": 0.8
+        }
+      }
+    },
+    {
+      "run": 5,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 42.90000003576279,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 15.5,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 22,
+          "layoutMs": 7.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 19.19999998807907,
+          "layoutMs": 9.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 22,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 16.600000023841858,
+          "layoutMs": 10.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 19.099999964237213,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 17.100000023841858,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 70.30000001192093,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 26.599999964237213,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 15.199999988079071,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 23.5,
+          "layoutMs": 3.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 19.19999998807907,
+          "layoutMs": 2.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 19.399999976158142,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 17.69999998807907,
+          "layoutMs": 5.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 41.90000003576279,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 26.69999998807907,
+          "layoutMs": 25.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 19.19999998807907,
+          "layoutMs": 6.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 25.80000001192093,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 16.19999998807907,
+          "layoutMs": 1.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 16.19999998807907,
+          "layoutMs": 2.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 17.599999964237213,
+          "layoutMs": 5.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 17.400000035762787,
+          "layoutMs": 3.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 16.69999998807907,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 17.200000047683716,
+          "layoutMs": 2.299999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 22.100000023841858,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 41.5,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 16.299999952316284,
+          "layoutMs": 1.7000000476837158,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 17.899999976158142,
+          "layoutMs": 3.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 21.80000001192093,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 38.40000003576279,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 37.80000001192093,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 19.400000035762787,
+          "layoutMs": 2.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 29.30000001192093,
+          "layoutMs": 4.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 19.399999976158142,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 17.100000023841858,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 27.600000023841858,
+          "layoutMs": 18.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 19.100000023841858,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 24.69999998807907,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 44,
+          "flippedIndex": 128,
+          "flippedToAttention": true,
+          "flushMs": 17.100000023841858,
+          "layoutMs": 2.099999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7619,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 128,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 19.4,
+          "min": 15.2,
+          "max": 70.3,
+          "p95": 41.9
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.3,
+          "min": 0,
+          "max": 25.4,
+          "p95": 10.9
+        }
+      }
+    },
+    {
+      "run": 6,
+      "side": "Fleet",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300FleetUpdates",
+      "ticks": [
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 60.90000003576279,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 34.40000003576279,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 17.900000035762787,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 15.699999988079071,
+          "layoutMs": 6,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 15.900000035762787,
+          "layoutMs": 9.899999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 17.19999998807907,
+          "layoutMs": 2.200000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 16.5,
+          "layoutMs": 12.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 15.5,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 16.30000001192093,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 47.90000003576279,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 16.399999976158142,
+          "layoutMs": 2.400000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 16.899999976158142,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 17.5,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 15.299999952316284,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 18.80000001192093,
+          "layoutMs": 2.599999964237213,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 5.799999952316284,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 35.80000001192093,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 17.19999998807907,
+          "layoutMs": 18.80000001192093,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 27.19999998807907,
+          "layoutMs": 10.700000047683716,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 19,
+          "layoutMs": 2.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 18.600000023841858,
+          "layoutMs": 2.199999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 16,
+          "layoutMs": 2.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 17.799999952316284,
+          "layoutMs": 7.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 16,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 23.399999976158142,
+          "layoutMs": 2.900000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 16,
+          "layoutMs": 2,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 22.19999998807907,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 46.299999952316284,
+          "layoutMs": 0.20000004768371582,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 17.599999964237213,
+          "layoutMs": 2.100000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 21.700000047683716,
+          "layoutMs": 3.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 16.599999964237213,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 34.90000003576279,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 40.59999996423721,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 17.600000023841858,
+          "layoutMs": 2.399999976158142,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 18,
+          "layoutMs": 2.900000035762787,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 22.30000001192093,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 15.300000011920929,
+          "layoutMs": 1.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 18.19999998807907,
+          "layoutMs": 11.600000023841858,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 15.899999976158142,
+          "layoutMs": 2.300000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 43,
+          "flippedIndex": 91,
+          "flippedToAttention": true,
+          "flushMs": 23.100000023841858,
+          "layoutMs": 2.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 7611,
+        "cardButtons": 272,
+        "boardRows": 0,
+        "boardLaneTotal": 0,
+        "fleetTeamHeaders": 36,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 91,
+        "toAttention": true,
+        "fleetNodeShowsAttention": true,
+        "boardLane": null
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 17.9,
+          "min": 15.3,
+          "max": 60.9,
+          "p95": 46.3
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 2.4,
+          "min": 0,
+          "max": 18.8,
+          "p95": 11.6
+        }
+      }
+    },
+    {
+      "run": 6,
+      "side": "Board",
+      "id": "dashboard/fleet/AgentDashboardScale:scale300BoardUpdates",
+      "ticks": [
+        {
+          "tick": 3,
+          "flippedIndex": 111,
+          "flippedToAttention": true,
+          "flushMs": 6.699999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 217
+        },
+        {
+          "tick": 4,
+          "flippedIndex": 148,
+          "flippedToAttention": true,
+          "flushMs": 8.300000011920929,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 225
+        },
+        {
+          "tick": 5,
+          "flippedIndex": 185,
+          "flippedToAttention": true,
+          "flushMs": 8.900000035762787,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 6,
+          "flippedIndex": 222,
+          "flippedToAttention": true,
+          "flushMs": 11.800000011920929,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 7,
+          "flippedIndex": 259,
+          "flippedToAttention": true,
+          "flushMs": 11.399999976158142,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 8,
+          "flippedIndex": 296,
+          "flippedToAttention": true,
+          "flushMs": 9.5,
+          "layoutMs": 0.40000003576278687,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 9,
+          "flippedIndex": 33,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 10,
+          "flippedIndex": 70,
+          "flippedToAttention": false,
+          "flushMs": 7,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 11,
+          "flippedIndex": 107,
+          "flippedToAttention": true,
+          "flushMs": 8.100000023841858,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 12,
+          "flippedIndex": 144,
+          "flippedToAttention": true,
+          "flushMs": 6.800000011920929,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 235
+        },
+        {
+          "tick": 13,
+          "flippedIndex": 181,
+          "flippedToAttention": true,
+          "flushMs": 7.599999964237213,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 14,
+          "flippedIndex": 218,
+          "flippedToAttention": true,
+          "flushMs": 7.899999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 15,
+          "flippedIndex": 255,
+          "flippedToAttention": false,
+          "flushMs": 7.599999964237213,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 16,
+          "flippedIndex": 292,
+          "flippedToAttention": true,
+          "flushMs": 4.900000035762787,
+          "layoutMs": 0.8999999761581421,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 17,
+          "flippedIndex": 29,
+          "flippedToAttention": true,
+          "flushMs": 9.699999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 18,
+          "flippedIndex": 66,
+          "flippedToAttention": true,
+          "flushMs": 8.199999988079071,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 19,
+          "flippedIndex": 103,
+          "flippedToAttention": true,
+          "flushMs": 6.599999964237213,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 242
+        },
+        {
+          "tick": 20,
+          "flippedIndex": 140,
+          "flippedToAttention": true,
+          "flushMs": 9.800000011920929,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 21,
+          "flippedIndex": 177,
+          "flippedToAttention": true,
+          "flushMs": 3.5,
+          "layoutMs": 0.5,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 22,
+          "flippedIndex": 214,
+          "flippedToAttention": true,
+          "flushMs": 4.199999988079071,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 23,
+          "flippedIndex": 251,
+          "flippedToAttention": true,
+          "flushMs": 4.699999988079071,
+          "layoutMs": 0.800000011920929,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 24,
+          "flippedIndex": 288,
+          "flippedToAttention": true,
+          "flushMs": 4.300000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 25,
+          "flippedIndex": 25,
+          "flippedToAttention": true,
+          "flushMs": 8.600000023841858,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 26,
+          "flippedIndex": 62,
+          "flippedToAttention": true,
+          "flushMs": 8.699999988079071,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 27,
+          "flippedIndex": 99,
+          "flippedToAttention": true,
+          "flushMs": 7.199999988079071,
+          "layoutMs": 0.30000001192092896,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 28,
+          "flippedIndex": 136,
+          "flippedToAttention": true,
+          "flushMs": 3.100000023841858,
+          "layoutMs": 0.6000000238418579,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 29,
+          "flippedIndex": 173,
+          "flippedToAttention": true,
+          "flushMs": 3.400000035762787,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 30,
+          "flippedIndex": 210,
+          "flippedToAttention": true,
+          "flushMs": 3.600000023841858,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 250
+        },
+        {
+          "tick": 31,
+          "flippedIndex": 247,
+          "flippedToAttention": true,
+          "flushMs": 3.200000047683716,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 32,
+          "flippedIndex": 284,
+          "flippedToAttention": true,
+          "flushMs": 4.5,
+          "layoutMs": 0.5999999642372131,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 33,
+          "flippedIndex": 21,
+          "flippedToAttention": false,
+          "flushMs": 8,
+          "layoutMs": 0.09999996423721313,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 34,
+          "flippedIndex": 58,
+          "flippedToAttention": false,
+          "flushMs": 7.5,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 254
+        },
+        {
+          "tick": 35,
+          "flippedIndex": 95,
+          "flippedToAttention": true,
+          "flushMs": 9.399999976158142,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 262
+        },
+        {
+          "tick": 36,
+          "flippedIndex": 132,
+          "flippedToAttention": true,
+          "flushMs": 8,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 37,
+          "flippedIndex": 169,
+          "flippedToAttention": true,
+          "flushMs": 4.300000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 38,
+          "flippedIndex": 206,
+          "flippedToAttention": true,
+          "flushMs": 6.899999976158142,
+          "layoutMs": 0.10000002384185791,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 39,
+          "flippedIndex": 243,
+          "flippedToAttention": true,
+          "flushMs": 4.300000011920929,
+          "layoutMs": 0.699999988079071,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 40,
+          "flippedIndex": 280,
+          "flippedToAttention": true,
+          "flushMs": 9.199999988079071,
+          "layoutMs": 0,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 41,
+          "flippedIndex": 17,
+          "flippedToAttention": true,
+          "flushMs": 7.300000011920929,
+          "layoutMs": 0.19999998807907104,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        },
+        {
+          "tick": 42,
+          "flippedIndex": 54,
+          "flippedToAttention": true,
+          "flushMs": 8.800000011920929,
+          "layoutMs": 0.2999999523162842,
+          "profilerMs": 0,
+          "commits": 0,
+          "expectedFleetNodes": 272
+        }
+      ],
+      "dom": {
+        "elements": 1259,
+        "cardButtons": 50,
+        "boardRows": 50,
+        "boardLaneTotal": 300,
+        "fleetTeamHeaders": 0,
+        "headerTotal": 300
+      },
+      "expectedNodes": 272,
+      "lastFlip": {
+        "index": 54,
+        "toAttention": true,
+        "fleetNodeShowsAttention": null,
+        "boardLane": "Needs You"
+      },
+      "problems": [],
+      "errors": 0,
+      "perRun": {
+        "flushMs": {
+          "n": 40,
+          "median": 7.6,
+          "min": 3.1,
+          "max": 11.8,
+          "p95": 9.8
+        },
+        "profilerMs": {
+          "n": 40,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "p95": 0
+        },
+        "layoutMs": {
+          "n": 40,
+          "median": 0.3,
+          "min": 0,
+          "max": 0.9,
+          "p95": 0.7
+        }
+      }
+    }
+  ]
+}

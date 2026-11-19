@@ -1,0 +1,40 @@
+== /root/orca-fleet-perf-harness/results-20261119-041528/dev-base/results.json
+   04:19:46 up 5 days, 18:59,  0 users,  load average: 1.52, 1.32, 1.14 | 8 cores | head 312382e07c
+   mount Fleet100  ready 338.7 [213.9-443.9]      react 181.6 [70.1-293.3]     elements   1502 nodes   42 (fleet expects 42) problems 0 errors 0
+   mount Board100  ready 221.2 [150.5-295.3]      react 131.7 [46.2-204.3]     elements    923 nodes   40 (fleet expects 42) problems 0 errors 0
+   mount Fleet300  ready 857.1 [795.7-939]        react 448 [354.3-519.4]      elements   5951 nodes  210 (fleet expects 210) problems 0 errors 0
+   mount Board300  ready 264.8 [168.9-374.2]      react 163.1 [64-244.6]       elements   1223 nodes   50 (fleet expects 210) problems 0 errors 0
+   update Fleet300 run-median flush 115.6 [102.1-125.1]    react 73.7 [69.9-79.4]     layout 2.1 [2.1-2.3]    pooled flush p50 114.7 p95 154.9 (n=200) commits 288 elements 7619 problems 0 errors 0
+   update Board300 run-median flush 23.2 [21.1-23.7]       react 10.5 [9.6-10.8]      layout 0.3 [0.3-0.4]    pooled flush p50 23.1 p95 30.9 (n=200) commits 340 elements 1259 problems 0 errors 0
+== /root/orca-fleet-perf-harness/results-20261119-041528/dev-memo/results.json
+   04:26:07 up 5 days, 19:05,  0 users,  load average: 3.45, 2.13, 1.52 | 8 cores | head 312382e07c
+   mount Fleet100  ready 339.8 [217.4-443.4]      react 172 [70-274.4]         elements   1502 nodes   42 (fleet expects 42) problems 0 errors 0
+   mount Board100  ready 240.3 [155.3-313.5]      react 128.3 [55.9-211.6]     elements    923 nodes   40 (fleet expects 42) problems 0 errors 0
+   mount Fleet300  ready 934.6 [882.4-1043.8]     react 534.3 [398.5-593.7]    elements   5951 nodes  210 (fleet expects 210) problems 0 errors 0
+   mount Board300  ready 308.9 [176.7-395.2]      react 169.7 [72-256.9]       elements   1223 nodes   50 (fleet expects 210) problems 0 errors 0
+   update Fleet300 run-median flush 92.1 [88.8-103]        react 57.7 [56.5-65.4]     layout 2.2 [2.1-2.3]    pooled flush p50 93 p95 131.5 (n=200) commits 288 elements 7619 problems 0 errors 0
+   update Board300 run-median flush 23.1 [22-24.9]         react 9.8 [9.6-11.2]       layout 0.4 [0.3-0.4]    pooled flush p50 22.7 p95 33.7 (n=200) commits 340 elements 1259 problems 0 errors 0
+== /root/orca-fleet-perf-harness/results-20261119-041528/prod-base/results.json
+   04:16:50 up 5 days, 18:56,  0 users,  load average: 1.77, 1.43, 1.13 | 8 cores | head 312382e07c
+   mount Fleet100  ready 144.5 [130.6-162.4]      react 0 [0-0]                elements   1502 nodes   42 (fleet expects 42) problems 0 errors 0
+   mount Board100  ready 89.5 [70.9-108]          react 0 [0-0]                elements    923 nodes   40 (fleet expects 42) problems 0 errors 0
+   mount Fleet300  ready 467 [435.1-493.2]        react 0 [0-0]                elements   5951 nodes  210 (fleet expects 210) problems 0 errors 0
+   mount Board300  ready 121.6 [88.5-151.5]       react 0 [0-0]                elements   1223 nodes   50 (fleet expects 210) problems 0 errors 0
+   update Fleet300 run-median flush 19.1 [16.9-21.4]       react 0 [0-0]              layout 2.4 [2.1-2.5]    pooled flush p50 19.2 p95 44.7 (n=280) commits 0 elements 7619 problems 0 errors 0
+   update Board300 run-median flush 7.1 [6.6-7.8]          react 0 [0-0]              layout 0.2 [0.2-0.3]    pooled flush p50 7 p95 10.8 (n=280) commits 0 elements 1259 problems 0 errors 0
+== /root/orca-fleet-perf-harness/results-20261119-041528/prod-base2/results.json
+   04:29:34 up 5 days, 19:09,  0 users,  load average: 1.68, 2.02, 1.59 | 8 cores | head 312382e07c
+   mount Fleet100  ready 142.3 [134.5-151.6]      react 0 [0-0]                elements   1502 nodes   42 (fleet expects 42) problems 0 errors 0
+   mount Board100  ready 90.4 [69.8-128.4]        react 0 [0-0]                elements    923 nodes   40 (fleet expects 42) problems 0 errors 0
+   mount Fleet300  ready 476.8 [401.1-490.2]      react 0 [0-0]                elements   5951 nodes  210 (fleet expects 210) problems 0 errors 0
+   mount Board300  ready 107.1 [93.2-121.6]       react 0 [0-0]                elements   1223 nodes   50 (fleet expects 210) problems 0 errors 0
+   update Fleet300 run-median flush 18.1 [17.5-19.3]       react 0 [0-0]              layout 2.3 [2.2-2.4]    pooled flush p50 18.1 p95 41.9 (n=280) commits 0 elements 7619 problems 0 errors 0
+   update Board300 run-median flush 7.1 [6.4-7.2]          react 0 [0-0]              layout 0.2 [0.2-0.3]    pooled flush p50 6.9 p95 10.2 (n=280) commits 0 elements 1259 problems 0 errors 0
+== /root/orca-fleet-perf-harness/results-20261119-041528/prod-memo/results.json
+   04:23:11 up 5 days, 19:02,  0 users,  load average: 1.52, 1.49, 1.24 | 8 cores | head 312382e07c
+   mount Fleet100  ready 155.8 [142.7-167.8]      react 0 [0-0]                elements   1502 nodes   42 (fleet expects 42) problems 0 errors 0
+   mount Board100  ready 88.8 [83.5-98.2]         react 0 [0-0]                elements    923 nodes   40 (fleet expects 42) problems 0 errors 0
+   mount Fleet300  ready 479 [439.5-537.9]        react 0 [0-0]                elements   5951 nodes  210 (fleet expects 210) problems 0 errors 0
+   mount Board300  ready 122 [100.2-145.4]        react 0 [0-0]                elements   1223 nodes   50 (fleet expects 210) problems 0 errors 0
+   update Fleet300 run-median flush 18.9 [16.8-19.7]       react 0 [0-0]              layout 2.3 [2.2-2.5]    pooled flush p50 18.5 p95 43.7 (n=280) commits 0 elements 7619 problems 0 errors 0
+   update Board300 run-median flush 7 [6.7-7.7]            react 0 [0-0]              layout 0.2 [0.2-0.3]    pooled flush p50 7 p95 10.4 (n=280) commits 0 elements 1259 problems 0 errors 0

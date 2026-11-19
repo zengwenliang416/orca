@@ -1,0 +1,74 @@
+Fleet vs Board render and update benchmark (Orca issue #44075)
+===============================================================
+
+What it measures
+- Fixtures: dashboard/fleet/AgentDashboardScale:{scale100Fleet, scale100Board,
+  scale300Fleet, scale300Board, scale300FleetUpdates, scale300BoardUpdates}.
+  Each renders the whole AgentKanbanBoard (760 px tall) from a seeded snapshot
+  generator (src/renderer/src/components/dashboard/fleet/fleet-scale-snapshot-fixtures.ts),
+  opened on Fleet or Board through the stored view preference.
+- Mount, per fixture: ms from the render call to data-fixture-state=ready
+  (includes fonts.ready, two animation frames and the fixture's animation settle),
+  React Profiler actualDuration summed over the mount commits (dev server only),
+  DOM element count of #component-fixture-frame.
+- Updates, 300 cards: every 250 ms the fixture flips one card between waiting and
+  working, rebuilds the full snapshot (fresh card objects, as the real snapshot
+  builder and the pop-out IPC clone produce) and commits it with flushSync.
+  Per tick: flushMs (render + commit + layout effects, wall time), profilerMs
+  (React Profiler actualDuration, dev server only), layoutMs (forced style and
+  layout after the commit).
+- Order: one warmup render per fixture, then N runs per side, alternating which
+  side goes first. Medians and ranges are over runs; "pooled" stats are over all ticks.
+- Work checks (a failed check is listed under "problems"): the header total equals
+  the card count; Fleet renders exactly the generator's expected node count (every
+  card except members of settled teams, which start folded); the board's lane counts
+  sum to the card count and it mounts at least one row; every update tick has a
+  profiler commit (dev); the last flipped card is shown in its new state (Fleet node
+  surface, or the board lane when that card is mounted).
+- Errors: page errors, console errors and HTTP >= 400 responses. The fixture
+  server's missing /favicon.ico (requested once on page load, before any run) is
+  listed under ignoredErrors instead.
+
+Server requirements
+- Node 24, pnpm 12.14.0 (corepack enable && corepack prepare pnpm@12.14.0 --activate).
+- The Orca repo at branch feat/orchestration-fleet-view (commit 312382e07c or later),
+  then `pnpm install`.
+- A headless Chromium. Default: playwright-core's chromium-headless-shell:
+    cd <repo> && pnpm exec playwright install --with-deps chromium-headless-shell
+  Or pass --browser /path/to/chrome (or --channel chrome) to run.mjs.
+- Record the machine state: the harness writes `uptime`, load average and core count
+  into results.json; run it on an otherwise idle machine.
+
+Rerun (two surfaces; decide on the production build)
+1. Dev server (React development build, React Profiler on). Start the fixture server,
+   then run the harness against it:
+     cd <repo>
+     pnpm fixtures:shot dashboard/fleet/AgentDashboardScale:scale100Board
+     node /tmp/fleet-perf/run.mjs --repo <repo> --out <out>/dev --runs 5 --ticks 40
+   (A cold fixture server can time out on its first page load: `pnpm fixtures:shot --stop`
+   and retry once. It exits after 20 idle minutes.)
+2. Production build (React production build, the way the app ships; Profiler numbers
+   read 0 here, use flushMs):
+     cd <repo>
+     pnpm exec vite build --config config/vite.fixtures.config.ts
+     pnpm exec vite preview --config config/vite.fixtures.config.ts --host 127.0.0.1 --port 4791 --strictPort &
+     node /tmp/fleet-perf/run.mjs --repo <repo> --url http://127.0.0.1:4791 --out <out>/prod --runs 5 --ticks 40
+3. Mitigation before/after (memoize Fleet nodes with the board's card comparator,
+   moved to board/dashboard-card-equality.ts). Not applied on the branch:
+     cd <repo> && git apply /tmp/fleet-perf/mitigation-memo-fleet-nodes.patch
+     then repeat 1 and 2 (rebuild before 2) with --out <out>/memo-dev and <out>/memo-prod,
+     and `git apply -R /tmp/fleet-perf/mitigation-memo-fleet-nodes.patch` afterwards.
+4. Summaries: python3 /tmp/fleet-perf/summarize.py <out>/*/results.json
+
+Options: --sizes 100,300  --runs 5  --ticks 40  --theme dark  --url <fixture server>
+         --browser <chromium path> | --channel <chrome|msedge>
+Diagnostic (unreported, slows the page): node /tmp/fleet-perf/profile-updates.mjs --repo <repo>
+  CPU-profiles 20 update ticks per side and lists self time by source.
+
+Files here
+- run.mjs, summarize.py, profile-updates.mjs: the harness.
+- results.json: local run on the dev fixture server. prod/results.json: local run on
+  the production build. mitigation-hypothesis/{dev,prod}/results.json: the same with
+  the memo patch applied. All local runs were on an 8-core M1 Pro with a load average
+  of about 75 to 200 from unrelated processes: local, not decision-grade.
+- mitigation-memo-fleet-nodes.patch: the candidate mitigation.
