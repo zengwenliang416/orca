@@ -85,12 +85,15 @@ export const createTerminalSlice: (
   ...createActiveWorkspaceTerminalActions(set, get),
   ...createTerminalTabCloseActions(set, get),
   ...createTerminalTabNavigationActions(set, get),
-  ...withTerminalSessionNameRecording(
-    withLayoutOwnerTerminalTabChanges(
-      {
-        ...createTerminalTabPresentationActions(set, get),
-        ...createTerminalTabAppearanceActions(set, get)
-      },
+  ...withRoomTabRenameOnHost(
+    withTerminalSessionNameRecording(
+      withLayoutOwnerTerminalTabChanges(
+        {
+          ...createTerminalTabPresentationActions(set, get),
+          ...createTerminalTabAppearanceActions(set, get)
+        },
+        get
+      ),
       get
     ),
     get
@@ -116,6 +119,27 @@ function withLayoutOwnerTerminalTabChanges<
   return ORCA_LAYOUT_OWNER_IS_MAIN
     ? { ...actions, ...routeTerminalTabChangesThroughLayoutOwner(actions, get) }
     : actions
+}
+
+function withRoomTabRenameOnHost<T extends Pick<TerminalSlice, 'setTabCustomTitle'>>(
+  actions: T,
+  get: TerminalStoreGet
+): T {
+  return {
+    ...actions,
+    setTabCustomTitle: (tabId, title, opts) => {
+      const tab = get().getTab(tabId)
+      if (tab?.contentType !== 'room') {
+        actions.setTabCustomTitle(tabId, title, opts)
+        return
+      }
+      if (title !== null) {
+        void import('@/lib/bot-group-room-rename').then(({ renameBotGroupRoom }) =>
+          renameBotGroupRoom(tab.entityId, title)
+        )
+      }
+    }
+  }
 }
 
 /** Every rename, routed or not, names the tab's agent session before it lands, so a close right

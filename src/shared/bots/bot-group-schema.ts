@@ -7,6 +7,7 @@ import type { AgentJournalRenderItem } from '../agent-session/journal/agent-sess
 import type { NativeChatBlock, NativeChatMessage } from '../native-chat/native-chat-types'
 import { isQuietBotResult, quietBotResultText } from '../bot-quiet-result'
 import { AutomationRunMessageSchema } from '../automations/automation-run-message'
+import { lazyZodSchema } from '../schema/lazy-zod-schema'
 
 // Read back through readBotFailure, which drops a code this build doesn't know.
 const StoredBotFailureSchema = z
@@ -57,14 +58,36 @@ export const BotGroupRemoteBotsSchema = z
 /** Sessions of members that left a room: its history still opens there; they grant no access. */
 const FormerSessionIds = z.array(z.string().min(1)).optional()
 
+const BOT_GROUP_THREAD_TITLE_MAX = 80
+
+/** `text` as a thread title: one line of at most 80 UTF-16 units, cut between code points so no
+ *  emoji is split, with no space left at either end. */
+export function botGroupThreadTitle(text: string): string {
+  let title = ''
+  for (const char of text.replace(/\s+/g, ' ').trim()) {
+    if (title.length + char.length > BOT_GROUP_THREAD_TITLE_MAX) {
+      break
+    }
+    title += char
+  }
+  return title.trimEnd()
+}
+
+export const BotGroupThreadTitleSchema = lazyZodSchema(() =>
+  z
+    .string()
+    .transform(botGroupThreadTitle)
+    .refine((title) => title.length > 0, 'Missing thread name')
+)
+
 /** Another room in the group, opened from its tab's + menu: every member on a fresh session. */
 const BotGroupThreadSchema = z.object({
   id: z.string().min(1),
   createdAt: z.number(),
   members: z.array(BotGroupMemberSchema),
   formerSessionIds: FormerSessionIds,
-  /** Its first post, cut to a line, which names its tab. */
-  title: z.string().max(80).optional()
+  /** Its first post, cut to a line, or the name its owner gave it; names its tab. */
+  title: z.string().max(BOT_GROUP_THREAD_TITLE_MAX).optional()
 })
 
 /** The room's newest post, for the sidebar row's preview; `authorName` is null for the owner. */

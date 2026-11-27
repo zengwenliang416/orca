@@ -6,6 +6,7 @@ import {
   type BotGroupSend,
   type BotGroupTurn
 } from '../../shared/bots/bot-group'
+import { botGroupThreadTitle } from '../../shared/bots/bot-group-schema'
 import { botGroupAudience } from '../../shared/bots/bot-group-mentions'
 import { stripSentImagePromptMarkers } from '../../shared/native-chat/transcript/images/native-chat-sent-image-prompt-markers'
 import { runKeyedSerializedOperation } from '../../shared/concurrency/keyed-serialized-operations'
@@ -137,7 +138,7 @@ function titleThread(groups: BotGroupRuntime, threadId: string, message: BotGrou
   if (group.threads?.find((thread) => thread.id === threadId)?.title) {
     return
   }
-  const title = botGroupMessageSummary(message).slice(0, 80)
+  const title = botGroupThreadTitle(botGroupMessageSummary(message))
   const titled = {
     ...group,
     threads: group.threads?.map((thread) =>

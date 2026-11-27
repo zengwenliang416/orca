@@ -9,9 +9,11 @@ import type {
 import { structuredAgentTurnAnchors } from '../native-chat/transcript/turns/native-chat-turn-membership'
 import { remoteMemberKey } from './bot-group-mentions'
 import { remoteAnswerLines, remoteMemberAsked } from './bot-group-remote-context'
+import { lazyZodSchema } from '../schema/lazy-zod-schema'
 import {
   BotGroupRemoteBotsSchema as RemoteBots,
   BotGroupReplyMode,
+  BotGroupThreadTitleSchema as ThreadTitle,
   type BotGroup,
   type BotGroupMember,
   type BotGroupMessage
@@ -143,6 +145,9 @@ export const BotGroupSend = Revision.extend({
 )
 export const BotGroupStop = Room.extend({ botId: z.string().min(1).optional() })
 export const BotGroupNewThread = GroupId.extend({})
+export const BotGroupRenameThread = lazyZodSchema(() =>
+  GroupId.extend({ threadId: z.string().min(1), title: ThreadTitle })
+)
 export const BotGroupDelete = GroupId
 
 type GroupJournal = {

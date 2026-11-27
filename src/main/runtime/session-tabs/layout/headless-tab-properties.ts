@@ -4,6 +4,7 @@ import {
 } from '../chat/structured-session-tab-rename'
 import { OrcaRuntimeWithHeadlessPaneMoveToNewTab } from './headless-pane-move-to-new-tab'
 import { botHomePinRefusal, botHomeSessionId } from '../chat/bot-home-snapshot'
+import { roomTabTitleRefusal } from '../chat/room-tab-title-refusal'
 import type { WorkspaceSessionState } from '../../../../shared/workspace-session/workspace-session-state-types'
 import type { RuntimeMobileSessionTabsSnapshot } from '../../../../shared/remote-runtime/session-graph/runtime-session-contracts'
 import type { RuntimeMobileSessionSnapshotTab } from '../../../../shared/remote-runtime/session-graph/runtime-mobile-session-tab-contracts'
@@ -54,15 +55,22 @@ export abstract class RuntimeHeadlessTabProperties extends OrcaRuntimeWithHeadle
     const hostTabId = snapshot
       ? (this.resolveMobileSessionHostTabId(snapshot, args.tabId) ?? args.tabId)
       : args.tabId
-    // Every client, CLI and older Orca reaches this; Home stays pinned and side chats never pin.
-    const pinRefusal = botHomePinRefusal(
-      snapshot,
-      botHomeSessionId(this.store, worktreeId),
-      hostTabId,
-      args.isPinned
-    )
-    if (pinRefusal) {
-      throw Object.assign(new Error(pinRefusal), { code: 'capability_unsupported' })
+    // Every client, CLI and older Orca reaches this; Home stays pinned, side chats never pin, and a
+    // room keeps its group's name.
+    const refusal =
+      botHomePinRefusal(
+        snapshot,
+        botHomeSessionId(this.store, worktreeId),
+        hostTabId,
+        args.isPinned
+      ) ??
+      roomTabTitleRefusal(
+        this.getWorkspaceSessionForWorktree(worktreeId)?.unifiedTabs?.[worktreeId],
+        hostTabId,
+        args.customTitle
+      )
+    if (refusal) {
+      throw Object.assign(new Error(refusal), { code: 'capability_unsupported' })
     }
     if (ORCA_LAYOUT_OWNER_IS_MAIN && (await this.setMainTabProps(worktreeId, hostTabId, args))) {
       return { updated: true }

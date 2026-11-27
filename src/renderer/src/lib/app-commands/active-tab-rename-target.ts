@@ -11,5 +11,7 @@ export function resolveActiveTabRenameTarget(
     return null
   }
   const activeTab = store.getActiveTab(activeWorktreeId)
-  return activeTab?.contentType === 'agent-session' ? activeTab.id : null
+  return activeTab?.contentType === 'agent-session' || activeTab?.contentType === 'room'
+    ? activeTab.id
+    : null
 }
