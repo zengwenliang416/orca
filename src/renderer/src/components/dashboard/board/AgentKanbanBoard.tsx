@@ -13,11 +13,15 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import { installWindowVisibilityInterval } from '@/lib/window-activity/window-visibility-interval'
 import { AgentKanbanLaneCardList } from './AgentKanbanLaneCardList'
 import { AgentDashboardToolbar } from './AgentDashboardToolbar'
+import type { AgentDashboardView } from './AgentDashboardViewToggle'
+import { loadAgentDashboardView, saveAgentDashboardView } from './agent-dashboard-view-storage'
+import { AgentFleetView } from '../fleet/AgentFleetView'
+import { useFleetTeamOpenOverrides } from '../fleet/use-fleet-team-open-overrides'
 import { AgentTerminalDialog } from '../terminal-preview/AgentTerminalDialog'
 import { EMPTY_DASHBOARD_FILTERS, type DashboardFilters } from './agent-board-filtering'
 import './agent-board-transitions.css'
-import { translate } from '@/i18n/i18n'
-import { useTranslate, type Translate } from '@/i18n/use-translate'
+import { useTranslate } from '@/i18n/use-translate'
+import { dashboardBucketLabel } from './dashboard-bucket-label'
 import type { AgentSubjectReadIntent } from '@/attention/agent-subject-read-actions'
 import { createDashboardBoardProjection, type DashboardLane } from './agent-board-projection'
 import { dashboardCardIndex } from '../snapshot/dashboard-card-changes'
@@ -32,17 +36,20 @@ function revealAgentViaPopoutRelay(args: AgentRevealArgs): void {
   void window.api.dashboard.revealAgent?.(args)
 }
 
-function bucketLabel(bucket: DashboardBucket, t: Translate = translate): string {
-  switch (bucket) {
-    case 'attention':
-      return t('dashboardPopout.bucket.attention', 'Needs You')
-    case 'working':
-      return t('dashboardPopout.bucket.working', 'Working')
-    case 'done':
-      return t('dashboardPopout.bucket.done', 'Done')
-    case 'idle':
-      return t('dashboardPopout.bucket.idle', 'Idle')
-  }
+function useFleetCards(
+  view: AgentDashboardView,
+  cards: DashboardCard[],
+  visibleBuckets: DashboardBucket[],
+  lanes: Record<DashboardBucket, DashboardLane>,
+  filteredCount: number
+): DashboardCard[] {
+  return useMemo(() => {
+    if (view === 'board' || filteredCount === cards.length) {
+      return cards
+    }
+    const indexes = new Set(visibleBuckets.flatMap((bucket) => lanes[bucket].indexes))
+    return cards.filter((_, index) => indexes.has(index))
+  }, [view, filteredCount, cards, visibleBuckets, lanes])
 }
 
 function KanbanColumn({
@@ -63,7 +70,7 @@ function KanbanColumn({
   onOpenTerminal: (card: DashboardCard) => void
 }): React.JSX.Element {
   const t = useTranslate()
-  const label = bucketLabel(bucket, t)
+  const label = dashboardBucketLabel(bucket, t)
   // State, not a ref: the list's virtualizer must re-render once the parent scroller attaches.
   const [scrollElement, setScrollElement] = useState<HTMLDivElement | null>(null)
 
@@ -139,6 +146,12 @@ export function AgentKanbanBoard({
   const [query, setQuery] = useState('')
   const searchInputRef = useRef<HTMLInputElement>(null)
   const [filters, setFilters] = useState<DashboardFilters>(EMPTY_DASHBOARD_FILTERS)
+  const [view, setView] = useState(loadAgentDashboardView)
+  const [teamOpenOverrides, handleTeamOpenChange] = useFleetTeamOpenOverrides()
+  const handleViewChange = useCallback((next: AgentDashboardView) => {
+    setView(next)
+    saveAgentDashboardView(next)
+  }, [])
   const [projectBoard] = useState(createDashboardBoardProjection)
   const { lanes, visibleCards, hasRelativeTimestamps } = projectBoard(
     snapshot.cards,
@@ -146,6 +159,11 @@ export function AgentKanbanBoard({
     query,
     filters
   )
+  const filteredCount = visibleBuckets.reduce(
+    (count, bucket) => count + lanes[bucket].indexes.length,
+    0
+  )
+  const fleetCards = useFleetCards(view, snapshot.cards, visibleBuckets, lanes, filteredCount)
   const [now, setNow] = useState(() => Date.now())
   useEffect(() => {
     if (!hasRelativeTimestamps) {
@@ -255,33 +273,47 @@ export function AgentKanbanBoard({
         <AgentDashboardToolbar
           cards={visibleCards}
           filterOptions={snapshot.filterOptions}
-          filteredCount={visibleBuckets.reduce(
-            (count, bucket) => count + lanes[bucket].indexes.length,
-            0
-          )}
+          filteredCount={filteredCount}
           query={query}
           onQueryChange={setQuery}
           filters={filters}
           onFiltersChange={setFilters}
           searchInputRef={searchInputRef}
+          view={view}
+          onViewChange={handleViewChange}
         />
-        <div className="scrollbar-sleek flex min-h-0 flex-1 overflow-x-auto p-3">
-          {/* Auto margins center the capped board and collapse during horizontal overflow. */}
-          <div className="mx-auto flex w-full max-w-[1280px] gap-3">
-            {visibleBuckets.map((bucket) => (
-              <KanbanColumn
-                key={bucket}
-                bucket={bucket}
-                cards={snapshot.cards}
-                lane={lanes[bucket]}
-                repoIconsByRepoId={snapshot.repoIconsByRepoId}
-                now={now}
-                dialogPaneKey={openedCard?.paneKey ?? null}
-                onOpenTerminal={handleOpenTerminal}
-              />
-            ))}
+        {view === 'board' ? (
+          <div className="scrollbar-sleek flex min-h-0 flex-1 overflow-x-auto p-3">
+            {/* Auto margins center the capped board and collapse during horizontal overflow. */}
+            <div className="mx-auto flex w-full max-w-[1280px] gap-3">
+              {visibleBuckets.map((bucket) => (
+                <KanbanColumn
+                  key={bucket}
+                  bucket={bucket}
+                  cards={snapshot.cards}
+                  lane={lanes[bucket]}
+                  repoIconsByRepoId={snapshot.repoIconsByRepoId}
+                  now={now}
+                  dialogPaneKey={openedCard?.paneKey ?? null}
+                  onOpenTerminal={handleOpenTerminal}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="scrollbar-sleek min-h-0 flex-1 overflow-y-auto p-3">
+            <AgentFleetView
+              cards={fleetCards}
+              buckets={visibleBuckets}
+              repoIconsByRepoId={snapshot.repoIconsByRepoId}
+              now={now}
+              onOpenCard={handleOpenTerminal}
+              teamOpenOverrides={teamOpenOverrides}
+              onTeamOpenChange={handleTeamOpenChange}
+              className="mx-auto w-full max-w-[1280px]"
+            />
+          </div>
+        )}
         <AgentTerminalDialog
           card={dialogCard}
           onOpenChange={handleDialogOpenChange}
